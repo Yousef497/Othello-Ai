@@ -19,6 +19,19 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI whiteScoreAllGame;
 
+    //--------Some GameObject variables to control the scene-------
+    [SerializeField]
+    private GameObject restartConfirmDialog;
+
+    [SerializeField]
+    private GameObject mainMenuConfirmDialog;
+
+    [SerializeField]
+    private GameObject restartContainer;
+
+    [SerializeField]
+    private GameObject disableClickPlane;
+
     //-------------Control Scene--------------------------------------
 
     public void SetPlayerText(Player currentPlayer)
@@ -62,5 +75,50 @@ public class UIManager : MonoBehaviour
         whiteScoreAllGame.text = $"<sprite name=DiscWhiteUp> {score}";
         whiteScoreAllGame.transform.LeanScale(Vector3.one * 1.2f, 0.2f).setLoopPingPong(1);
     }
+
+    //-----------------Restart and Main Menu--------------------------
+
+    public void onRestartCilcked()
+    {
+        restartContainer.SetActive(false);
+        restartConfirmDialog.SetActive(true);
+        disableClickPlane.SetActive(true);
+    }
+
+    public void restartConfirmNo()
+    {
+        restartContainer.SetActive(true);
+        restartConfirmDialog.SetActive(false);
+        disableClickPlane.SetActive(false);
+    }
+
+    public void onMainMenuClicked()
+    {
+        restartContainer.SetActive(false);
+        mainMenuConfirmDialog.SetActive(true);
+        disableClickPlane.SetActive(true);
+    }
+
+    public void mainMenuConfirmNo()
+    {
+        restartContainer.SetActive(true);
+        mainMenuConfirmDialog.SetActive(false);
+        disableClickPlane.SetActive(false);
+    }
+
+    //-------------------------------------------------------------
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        mainMenuConfirmDialog.SetActive(false);
+        restartConfirmDialog.SetActive(false);
+    }
+
+    // Update is called once per frame
+    //void Update()
+    //{
+
+    //}
 
 }
