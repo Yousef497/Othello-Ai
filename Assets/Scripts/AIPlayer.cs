@@ -16,9 +16,20 @@ public class AIPlayer
         this.searchDepth = depth;
         this.gameStatePool = new ObjectPool<GameState>(() => new GameState());
     }
-
-
     
+    //---------------------All Heuristics Evaluation Function-----------------------
+
+    private int CalculateHeuristics(GameState gameState)
+    {
+        int coinParityHeuristic = CoinParityHeuristic(gameState);
+        int actualMobilityHeuristic = ActualMobilityHeuristic(gameState);
+        int potentialMobilityHeuristic = PotentialMobilityHeuristic(gameState);
+        int cornersHeuristic = CornersCapturedHeuristic(gameState);
+
+        return (coinParityHeuristic + actualMobilityHeuristic + potentialMobilityHeuristic + cornersHeuristic);
+        //return (coinParityHeuristic + actualMobilityHeuristic + cornersHeuristic);
+
+    }   
 
     //---------------------All Heuristics Evaluation Function-----------------------
 
@@ -121,10 +132,65 @@ public class AIPlayer
         {
             return 0;
         }
+        
 
+    }
+    
+    //----------------------------Corners Captured----------------------------------//
+
+    private int CornersCapturedHeuristic(GameState gameState)
+    {
+        Player currentPLayer = gameState.CurrentPlayer;
+
+        // A simple evaluation function that calculates the potential mobility heuristic
+
+        int minScore = GetCornersCaptured(gameState, currentPLayer);
+        int maxScore = GetCornersCaptured(gameState, currentPLayer.Opponent());
+        int result = 0;
+
+        if ((maxScore + minScore) != 0)
+        {
+            result = 100 * (maxScore - minScore) / (maxScore + minScore);
+            return result;
+        }
+        else
+        {
+            result = 0;
+            return result;
+        }
     }
 
 
+    private int GetCornersCaptured(GameState gameState, Player player)
+    {
+        int cornersCaptured = 0;
+
+        // Define the positions of the four corners on the game board
+        Position topLeftCorner = new Position(0, 0);
+        Position topRightCorner = new Position(0, GameState.Cols - 1);
+        Position bottomLeftCorner = new Position(GameState.Rows - 1, 0);
+        Position bottomRightCorner = new Position(GameState.Rows - 1, GameState.Cols - 1);
+
+        // Check each corner position to see if the player has a piece there
+        if (gameState.Board[topLeftCorner.Row, topLeftCorner.Col] == player)
+        {
+            cornersCaptured++;
+        }
+        if (gameState.Board[topRightCorner.Row, topRightCorner.Col] == player)
+        {
+            cornersCaptured++;
+        }
+        if (gameState.Board[bottomLeftCorner.Row, bottomLeftCorner.Col] == player)
+        {
+            cornersCaptured++;
+        }
+        if (gameState.Board[bottomRightCorner.Row, bottomRightCorner.Col] == player)
+        {
+            cornersCaptured++;
+        }
+
+        return cornersCaptured;
+    }
 
 
 }
