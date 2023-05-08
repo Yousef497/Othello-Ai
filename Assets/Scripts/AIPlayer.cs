@@ -68,5 +68,63 @@ public class AIPlayer
 
         return 0;
     }
+    //------------------------------Actual Mobility----------------------------------
+
+    private int ActualMobilityHeuristic(GameState gameState)
+    {
+        // A simple evaluation function that calculates the actual mobility heuristic
+        Player maxPlayer = gameState.CurrentPlayer;
+        Player minPlayer = maxPlayer.Opponent();
+
+        if (maxPlayer == Player.None)
+        {
+            return 0;
+        }
+
+        int maxMobility = gameState.FindLegalMoves(maxPlayer).Count;
+        int minMobility = gameState.FindLegalMoves(minPlayer).Count;
+
+        if ((maxMobility + minMobility) != 0)
+        {
+            return (100 * (maxMobility - minMobility)) / (maxMobility + minMobility);
+        }
+
+        else
+        {
+            return 0;
+        }
+
+    }
+     //---------------------------------Potential Mobility-------------------------------
+
+    private int PotentialMobilityHeuristic(GameState gameState)
+    {
+        // A simple evaluation function that calculates the potential mobility heuristic
+        
+        Player minPlayer = gameState.CurrentPlayer;
+        Player maxPlayer = minPlayer.Opponent();
+
+        if (maxPlayer == Player.None)
+        {
+            return 0;
+        }
+
+        int maxMobility = GetPotentialMobility(gameState, maxPlayer);
+        int minMobility = GetPotentialMobility(gameState, minPlayer);
+
+        if ((maxMobility + minMobility) != 0)
+        {
+            return (100 * (maxMobility - minMobility)) / (maxMobility + minMobility);
+        }
+
+        else
+        {
+            return 0;
+        }
+
+    }
+
+
+
 
 }
