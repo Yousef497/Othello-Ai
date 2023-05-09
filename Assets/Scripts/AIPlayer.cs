@@ -16,21 +16,95 @@ public class AIPlayer
         this.searchDepth = depth;
         this.gameStatePool = new ObjectPool<GameState>(() => new GameState());
     }
-    
-    //---------------------All Heuristics Evaluation Function-----------------------
+    //-----------------------Get best move to play---------------------------------
 
-    private int CalculateHeuristics(GameState gameState)
+    public Position GetBestMove(GameState gameState)
     {
-        int coinParityHeuristic = CoinParityHeuristic(gameState);
-        int actualMobilityHeuristic = ActualMobilityHeuristic(gameState);
-        int potentialMobilityHeuristic = PotentialMobilityHeuristic(gameState);
-        int cornersHeuristic = CornersCapturedHeuristic(gameState);
+        // Get a GameState instance from the object pool to improve memory
+        GameState pooledGameState = gameStatePool.GetObject();
+        pooledGameState.CopyFrom(gameState);
 
-        return (coinParityHeuristic + actualMobilityHeuristic + potentialMobilityHeuristic + cornersHeuristic);
-        //return (coinParityHeuristic + actualMobilityHeuristic + cornersHeuristic);
+        Position bestMove = MiniMax(pooledGameState, searchDepth).Position;
 
-    }   
+        // Return the GameState instance to the object pool
+        gameStatePool.PutObject(pooledGameState);
 
+        return bestMove;
+    }
+    //------------------------MiniMax Alpha-Beta Pruning---------------------------
+
+    private (int Score, Position Position) MiniMax(GameState gameState, int depth, int alpha = int.MinValue, int beta = int.MaxValue, bool maximizingPlayer = true, int timeoutSeconds = 3)
+    {
+        if (depth == 0 || gameState.GameOver)
+        {
+            return (CalculateHeuristics(gameState), null);
+        }
+
+        List<Position> legalMoves = new List<Position>(gameState.LegalMoves.Keys);
+
+        // if player is black, then try to maximize
+        // else, try to minimize
+        Func<int, int, int> Optimizer = maximizingPlayer ? (Func<int, int, int>)Math.Max : (Func<int, int, int>)Math.Min;
+
+        int bestScore = maximizingPlayer ? int.MinValue : int.MaxValue;
+        Position bestMove = null;
+
+        // Set a timer for th AI player
+        bool timeoutReached = false;
+        var timer = new System.Timers.Timer(timeoutSeconds * 1000);
+        timer.Elapsed += (sender, e) =>
+        {
+            timeoutReached = true;
+            timer.Stop();
+        };
+        timer.Start();
+
+
+        foreach (Position move in legalMoves)
+        {
+            if (timeoutReached)
+            {
+                break;
+            }
+
+            // Get a GameState instance from the object pool
+            GameState pooledGameState = gameStatePool.GetObject();
+            pooledGameState.CopyFrom(gameState);
+            pooledGameState.MakeMove(move, out _);
+
+            int score = MiniMax(pooledGameState, depth - 1, alpha, beta, !maximizingPlayer, timeoutSeconds).Score;
+
+            if (bestScore != Optimizer(score, bestScore))
+            {
+                bestMove = move;
+                bestScore = score;
+            }
+
+            if (maximizingPlayer)
+            {
+                alpha = Optimizer(alpha, bestScore);
+            }
+
+            else
+            {
+                beta = Optimizer(beta, bestScore);
+            }
+
+            if (beta <= alpha)
+            {
+                break;     // Alpha-Beta Cut off
+            }
+
+            // Return the GameState instance to the object pool
+            gameStatePool.PutObject(pooledGameState);
+
+        }
+
+        timer.Stop();
+
+        return (bestScore, bestMove);
+
+    }
     //---------------------All Heuristics Evaluation Function-----------------------
 
     private int CalculateHeuristics(GameState gameState)
