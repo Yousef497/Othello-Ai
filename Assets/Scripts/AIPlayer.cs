@@ -11,10 +11,15 @@ public class AIPlayer
     private int searchDepth { set; get; }
     private ObjectPool<GameState> gameStatePool;
 
-    public AIPlayer(int depth)
+    public AIPlayer()
     {
-        this.searchDepth = depth;
+        this.searchDepth = 1;
         this.gameStatePool = new ObjectPool<GameState>(() => new GameState());
+		
+		public void SetDepth(int depth)
+        {
+        this.searchDepth = depth;
+        }
     }
     //-----------------------Get best move to play---------------------------------
 
@@ -31,6 +36,11 @@ public class AIPlayer
 
         return bestMove;
     }
+	//---------------------------Test----------------------------
+
+
+    //---------------------------------------------------------------------------
+
     //------------------------MiniMax Alpha-Beta Pruning---------------------------
 
     private (int Score, Position Position) MiniMax(GameState gameState, int depth, int alpha = int.MinValue, int beta = int.MaxValue, bool maximizingPlayer = true, int timeoutSeconds = 3)
@@ -209,6 +219,48 @@ public class AIPlayer
         
 
     }
+	private int GetPotentialMobility(GameState gameState, Player player)
+    {
+        int potentialMobility = 0;
+
+        foreach (KeyValuePair<Position, List<Position>> entry in gameState.FindLegalMoves(player))
+        {
+            Position movePos = entry.Key;
+            List<Position> legalPositions = entry.Value;
+
+            foreach (Position position in legalPositions)
+            {
+                foreach (Position neighbor in GetNeighbors(position))
+                {
+                    if (gameState.Board[neighbor.Row, neighbor.Col] == Player.None)
+                    {
+                        potentialMobility++;
+                    }
+                }
+            }
+        }
+
+        return potentialMobility;
+
+    }
+
+
+    private IEnumerable<Position> GetNeighbors(Position position)
+    {
+        // Returns the neighboring positions of a given position
+        // Assumes that the board has a fixed size of 8x8
+        for (int row = position.Row - 1; row <= position.Row + 1; row++)
+        {
+            for (int col = position.Col - 1; col <= position.Col + 1; col++)
+            {
+                if (row >= 0 && row < 8 && col >= 0 && col < 8 && !(row == position.Row && col == position.Col))
+                {
+                    yield return new Position(row, col);
+                }
+            }
+        }
+    }
+
     
     //----------------------------Corners Captured----------------------------------//
 
