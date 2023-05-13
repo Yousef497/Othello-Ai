@@ -356,6 +356,7 @@
 "Assets/LeanTween/Framework/LTSeq.cs"
 "Assets/Scripts/Disc.cs"
 "Assets/Scripts/Highlight.cs"
+"Assets/Scripts/MenuController.cs"
 "Assets/Scripts/MoveInfo.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Position.cs"
