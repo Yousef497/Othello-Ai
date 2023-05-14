@@ -38,10 +38,71 @@ public class GameManager : MonoBehaviour
 
 
     //------------------------------------------------------------
+    
+    
 
 
     // ----------------------------Functions and Methods--------------------------------
+//-----------------------------Human VS Human-------------------------
 
+    private void HumanPlay()
+    {
+        // ----- Left Mouse button clicked -----
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hitInfo))
+            {
+                if (!IsPointerOverUIObject())
+                {
+                    Vector3 impact = hitInfo.point;
+                    Position boardPos = SceneToBoardPos(impact);
+                    OnBoardClicked(boardPos);
+                }
+
+            }
+        }
+    }
+
+
+    // Disable clicks through UI Elements, not to click on highlights
+    // when a pop up of restart or main menu confirmation messages
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    }
+    
+    //--------------------Highlights Methods---------------------------
+    private void ShowLegalMoves()
+    {
+        foreach (Position boardPos in gameState.LegalMoves.Keys)
+        {
+            Vector3 scenePos = BoardToScenePos(boardPos) + Vector3.up * 0.01f;
+            GameObject highlight = Instantiate(highlightPrefab, scenePos, Quaternion.identity);
+            highlights.Add(highlight);
+        }
+    }
+
+    private void HideLegalMoves()
+    {
+        highlights.ForEach(Destroy);
+        highlights.Clear();
+    }
+
+    
+    private void OnBoardClicked(Position boardPos)
+    {
+        if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))
+        {
+            //StartCoroutine(OnMoveMade(moveInfo)); 
+            // call routine to make a move on GUI (to be added later)
+        }
+    }
 
     // --------------------Some Helper Methods---------------------------
 
