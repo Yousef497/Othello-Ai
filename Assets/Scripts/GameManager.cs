@@ -170,28 +170,40 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(MainMenu);
     }
 }
-    //--------Restart Game Play Again Button after End Game-------------------
-    private IEnumerator RestartGame()
+   //------------------Disc Counting Game Over--------------
+    private IEnumerator ShowCounting()
     {
-        yield return uiManager.HideEndScreen();
-        Scene activeScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(activeScene.name);
+        int black = 0, white = 0;
+
+        foreach (Position pos in gameState.OccupiedPositions())
+        {
+            Player player = gameState.Board[pos.Row, pos.Col];
+
+            if (player == Player.Black)
+            {
+                black++;
+                uiManager.SetBlackScoreText(black);
+            }
+            else if (player == Player.White)
+            {
+                white++;
+                uiManager.SetWhiteScoreText(white);
+            }
+
+            discs[pos.Row, pos.Col].Twitch();
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 
-    public void OnPlayAgainClicked()
+    //--------------------Disc Counting---------------------
+    private void BlackCount()
     {
-        StartCoroutine(RestartGame());
+        int black = gameState.DiscCount[Player.Black];
+        uiManager.SetBlackScoreAllText(black);
     }
 
-    //----------Restart Game by user in the middle of the game-------------------
-    public void RestartConfirmYes()
+    private void WhiteCount()
     {
-        Scene activeScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(activeScene.name);
-    }
-
-    //--------------------Return to Main Menu to change game mode---------------
-    public void MainMenuConfirmYes()
-    {
-        SceneManager.LoadScene(MainMenu);
+        int white = gameState.DiscCount[Player.White];
+        uiManager.SetWhiteScoreAllText(white);
     }
