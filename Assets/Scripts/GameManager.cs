@@ -170,3 +170,28 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(MainMenu);
     }
 }
+    //--------Restart Game Play Again Button after End Game-------------------
+    private IEnumerator RestartGame()
+    {
+        yield return uiManager.HideEndScreen();
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+    }
+
+    public void OnPlayAgainClicked()
+    {
+        StartCoroutine(RestartGame());
+    }
+
+    //----------Restart Game by user in the middle of the game-------------------
+    public void RestartConfirmYes()
+    {
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+    }
+
+    //--------------------Return to Main Menu to change game mode---------------
+    public void MainMenuConfirmYes()
+    {
+        SceneManager.LoadScene(MainMenu);
+    }
