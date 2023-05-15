@@ -43,7 +43,8 @@ public class GameManager : MonoBehaviour
 
 
     // ----------------------------Functions and Methods--------------------------------
-//-----------------------------Human VS Human-------------------------
+
+    //-----------------------------Human VS Human-------------------------
 
     private void HumanPlay()
     {
@@ -98,8 +99,7 @@ public class GameManager : MonoBehaviour
     private void OnBoardClicked(Position boardPos)
     {
         if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))
-        {
-            //StartCoroutine(OnMoveMade(moveInfo)); 
+        { 
             // call routine to make a move on GUI (to be added later)
         }
     }
@@ -144,4 +144,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //--------Restart Game Play Again Button after End Game-------------------
+    private IEnumerator RestartGame()
+    {
+        yield return uiManager.HideEndScreen();
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+    }
+
+    public void OnPlayAgainClicked()
+    {
+        StartCoroutine(RestartGame());
+    }
+
+    //----------Restart Game by user in the middle of the game-------------------
+    public void RestartConfirmYes()
+    {
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+    }
+
+    //--------------------Return to Main Menu to change game mode---------------
+    public void MainMenuConfirmYes()
+    {
+        SceneManager.LoadScene(MainMenu);
+    }
 }
