@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
 
 
     //------------------------------------------------------------
-    
-    
+
+
 
 
     // ----------------------------Functions and Methods--------------------------------
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
     }
-    
+
     //--------------------Highlights Methods---------------------------
     private void ShowLegalMoves()
     {
@@ -95,12 +95,12 @@ public class GameManager : MonoBehaviour
         highlights.Clear();
     }
 
-    
+
     private void OnBoardClicked(Position boardPos)
     {
         if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))
-        { 
-            // call routine to make a move on GUI (to be added later)
+        {
+            StartCoRoutine(OnMoveMade(moveInfo));
         }
     }
 
@@ -144,6 +144,67 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // ------------------- Update co-routines --------------------------
+
+    private IEnumerator ShowMove(MoveInfo moveInfo)
+    {
+        //yield return new WaitForSeconds(0.53f);
+        SpawnDisc(discPrefabs[moveInfo.Player], moveInfo.Position);
+        yield return new WaitForSeconds(0.33f);
+        FlipDiscs(moveInfo.Outflanked);
+        yield return new WaitForSeconds(0.83f);
+    }
+
+    private IEnumerator OnMoveMade(MoveInfo moveInfo)
+    {
+        //yield return new WaitForSeconds(2f);
+        HideLegalMoves();
+        yield return ShowMove(moveInfo);
+        yield return ShowTurnOutcome(moveInfo);
+        ShowLegalMoves();
+    }
+
+    private IEnumerator ShowTurnSkipped(Player skippedPlayer)
+    {
+        uiManager.SetSkippedText(skippedPlayer);
+        yield return uiManager.AnimateTopText();
+    }
+
+    private IEnumerator ShowGameOver(Player winner)
+    {
+        uiManager.SetTopText("Neither Player Can Move");
+        yield return uiManager.AnimateTopText();
+
+        yield return uiManager.ShowScoreText();
+        yield return new WaitForSeconds(0.5f);
+
+        yield return ShowCounting();
+
+        uiManager.SetWinnerText(winner);
+        yield return uiManager.ShowEndScreen();
+    }
+
+    private IEnumerator ShowTurnOutcome(MoveInfo moveInfo)
+    {
+        if (gameState.GameOver)
+        {
+            yield return ShowGameOver(gameState.Winner);
+            yield break;
+        }
+
+        Player currentPlayer = gameState.CurrentPlayer;
+
+        if (currentPlayer == moveInfo.Player)
+        {
+            yield return ShowTurnSkipped(currentPlayer.Opponent());
+        }
+
+        uiManager.SetPlayerText(currentPlayer);
+        BlackCount();
+        WhiteCount();
+
+    }
+
     //--------Restart Game Play Again Button after End Game-------------------
     private IEnumerator RestartGame()
     {
@@ -169,8 +230,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(MainMenu);
     }
-}
-   //------------------Disc Counting Game Over--------------
+
+    //------------------Disc Counting Game Over--------------
     private IEnumerator ShowCounting()
     {
         int black = 0, white = 0;
@@ -207,3 +268,4 @@ public class GameManager : MonoBehaviour
         int white = gameState.DiscCount[Player.White];
         uiManager.SetWhiteScoreAllText(white);
     }
+}
