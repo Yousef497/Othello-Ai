@@ -36,13 +36,59 @@ public class GameManager : MonoBehaviour
     private Disc[,] discs = new Disc[8, 8];
     private List<GameObject> highlights = new List<GameObject>();
 
+    private AIPlayer AIBlack = new AIPlayer();
+    private AIPlayer AIWhite = new AIPlayer();
+
 
     //------------------------------------------------------------
 
 
-
-
     // ----------------------------Functions and Methods--------------------------------
+
+
+
+
+    //----------------------------PC VS PC--------------------------------
+
+    private IEnumerator PCVSPC()
+    {
+        // The AI player will be black
+        if (gameState.CurrentPlayer == Player.Black)
+        {
+            Position AIMove = AIBlack.GetBestMove(gameState);
+            yield return new WaitForSeconds(2f);
+            OnBoardClicked(AIMove);
+        }
+
+        else if (gameState.CurrentPlayer == Player.White)
+        {
+            Position AIMove = AIWhite.GetBestMove(gameState);
+            yield return new WaitForSeconds(2f);
+            OnBoardClicked(AIMove);
+        }
+    }
+
+
+    //----------------------------Human VS PC-----------------------------
+
+    private IEnumerator HumanVSPC()
+    {
+        // The AI player will be black
+        if (gameState.CurrentPlayer == Player.Black)
+        {
+            Position AIMove = AIBlack.GetBestMove(gameState);
+            yield return new WaitForSeconds(2f);
+            OnBoardClicked(AIMove);
+        }
+
+        else if (gameState.CurrentPlayer == Player.White)
+        {
+            //yield return new WaitForSeconds(1f);
+            HumanPlay();
+            //yield return new WaitForSeconds(2f);
+        }
+    }
+
 
     //-----------------------------Human VS Human-------------------------
 
@@ -78,6 +124,7 @@ public class GameManager : MonoBehaviour
         return results.Count > 0;
     }
 
+
     //--------------------Highlights Methods---------------------------
     private void ShowLegalMoves()
     {
@@ -95,14 +142,15 @@ public class GameManager : MonoBehaviour
         highlights.Clear();
     }
 
-
+    
     private void OnBoardClicked(Position boardPos)
     {
         if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))
         {
-            StartCoRoutine(OnMoveMade(moveInfo));
+            StartCoroutine(OnMoveMade(moveInfo));
         }
     }
+
 
     // --------------------Some Helper Methods---------------------------
 
@@ -143,6 +191,8 @@ public class GameManager : MonoBehaviour
             discs[boardPos.Row, boardPos.Col].Flip();
         }
     }
+
+
 
     // ------------------- Update co-routines --------------------------
 
@@ -205,32 +255,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //--------Restart Game Play Again Button after End Game-------------------
-    private IEnumerator RestartGame()
-    {
-        yield return uiManager.HideEndScreen();
-        Scene activeScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(activeScene.name);
-    }
-
-    public void OnPlayAgainClicked()
-    {
-        StartCoroutine(RestartGame());
-    }
-
-    //----------Restart Game by user in the middle of the game-------------------
-    public void RestartConfirmYes()
-    {
-        Scene activeScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(activeScene.name);
-    }
-
-    //--------------------Return to Main Menu to change game mode---------------
-    public void MainMenuConfirmYes()
-    {
-        SceneManager.LoadScene(MainMenu);
-    }
-
     //------------------Disc Counting Game Over--------------
     private IEnumerator ShowCounting()
     {
@@ -267,5 +291,32 @@ public class GameManager : MonoBehaviour
     {
         int white = gameState.DiscCount[Player.White];
         uiManager.SetWhiteScoreAllText(white);
+    }
+
+
+    //--------Restart Game Play Again Button after End Game-------------------
+    private IEnumerator RestartGame()
+    {
+        yield return uiManager.HideEndScreen();
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+    }
+
+    public void OnPlayAgainClicked()
+    {
+        StartCoroutine(RestartGame());
+    }
+
+    //----------Restart Game by user in the middle of the game-------------------
+    public void RestartConfirmYes()
+    {
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.name);
+    }
+
+    //--------------------Return to Main Menu to change game mode---------------
+    public void MainMenuConfirmYes()
+    {
+        SceneManager.LoadScene(MainMenu);
     }
 }
