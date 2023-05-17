@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Text;
-using System.Security.Cryptography;
 
 
 // Game Rules class
@@ -65,8 +64,53 @@ public class GameState
         LegalMoves = FindLegalMoves(CurrentPlayer);
     }
 
-    
-    //---------------------------------------------------------------------
+
+    // Constructor to create a deep copy of the GameState class
+    public GameState(GameState other)
+    {
+        Board = (Player[,])other.Board.Clone();
+        DiscCount = new Dictionary<Player, int>()
+        {
+            { Player.Black, other.DiscCount[Player.Black] },
+            { Player.White, other.DiscCount[Player.White] }
+        };
+        CurrentPlayer = other.CurrentPlayer;
+        GameOver = other.GameOver;
+        Winner = other.Winner;
+        LegalMoves = new Dictionary<Position, List<Position>>();
+
+        foreach (KeyValuePair<Position, List<Position>> entry in other.LegalMoves)
+        {
+            List<Position> outflanked = new List<Position>(entry.Value);
+            LegalMoves.Add(entry.Key, outflanked);
+        }
+    }
+
+    // --------------------------------------------------------------------------------
+
+    public void CopyFrom(GameState other)
+    {
+        Board = (Player[,])other.Board.Clone();
+
+        DiscCount = new Dictionary<Player, int>()
+        {
+            { Player.Black, other.DiscCount[Player.Black] },
+            { Player.White, other.DiscCount[Player.White] }
+        };
+
+        CurrentPlayer = other.CurrentPlayer;
+        GameOver = other.GameOver;
+        Winner = other.Winner;
+
+        LegalMoves = new Dictionary<Position, List<Position>>();
+        foreach (KeyValuePair<Position, List<Position>> entry in other.LegalMoves)
+        {
+            List<Position> outflanked = new List<Position>(entry.Value);
+            LegalMoves.Add(entry.Key, outflanked);
+        }
+    }
+
+
     public GameState LookAhead(Position pos)
     {
         GameState newGameState = new GameState(this);
@@ -187,7 +231,12 @@ public class GameState
             Winner = FindWinner();
         }
     }
-    
+
+
+    //--------------------------------------------------------------------------------------
+
+
+
     //---------------------------------------------------------------------
     // to get legal moves to position the disc
     // the position should be:
@@ -281,5 +330,11 @@ public class GameState
         //Debug.Log(legalMoves.Count);
         return legalMoves;
     }
+
+
+
+
+    //--------------------------------------------------------------------------------
+    
 
 }
