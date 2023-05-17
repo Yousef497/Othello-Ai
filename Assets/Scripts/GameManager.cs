@@ -46,6 +46,81 @@ public class GameManager : MonoBehaviour
     // ----------------------------Functions and Methods--------------------------------
 
 
+    // Start is called before the first frame update
+
+    private void Start()
+    {
+
+        //------------------------------Important----------------------------
+        //      gameMode                    |           Difficulty          |
+        //      1 = Human Vs Human          |           1 = depth 1         |
+        //      2 = Human Vs PC             |           2 = depth 2         |
+        //      3 = PC Vs PC                |           3 = depth 3         |
+        //-------------------------------------------------------------------
+
+        gameMode = PlayerPrefs.GetInt("Mode");
+        AiBlackLevel = PlayerPrefs.GetInt("AiBlackLevel");
+        AiWhiteLevel = PlayerPrefs.GetInt("AiWhiteLevel");
+
+
+        //Debug.Log(gameMode);
+        //Debug.Log(difficulty);
+
+
+        AIBlack.SetDepth(AiBlackLevel);
+        AIWhite.SetDepth(AiWhiteLevel);
+
+        discPrefabs[Player.Black] = discBlackUp;
+        discPrefabs[Player.White] = discWhiteUp;
+
+        AddStartDiscs();
+        ShowLegalMoves();
+        uiManager.SetPlayerText(gameState.CurrentPlayer);
+    }
+
+
+    // -----------------------------------------------------------------
+
+    // Update is called once per frame
+    private void Update()
+    {
+        //Debug.Log(gameMode);
+        //Debug.Log(AiBlackLevel);
+        //Debug.Log(AiWhiteLevel);
+        //Debug.Log("Mode: " + gameMode + " Black: " + AiBlackLevel + " White: " + AiWhiteLevel);
+        //Debug.Log(gameState.FindLegalMoves(Player.Black).Values);
+        //Debug.Log(AI.GetPotentialMobility(gameState, Player.Black));
+        //Debug.Log(AI.GetCornersCaptured(gameState, Player.Black));
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // if escape is pressed return to menu
+            SceneManager.LoadScene(MainMenu);
+        }
+
+        if (gameMode != 0)
+        {
+            if (gameMode == 1)
+            {
+                HumanPlay();
+            }
+
+            else if (gameMode == 2)
+            {
+                StartCoroutine(HumanVSPC());
+            }
+
+            else
+            {
+                StartCoroutine(PCVSPC());
+            }
+        }
+
+
+        //HumanPlay();
+        //StartCoroutine(HumanVSPC());
+        //StartCoroutine(PCVSPC());
+    }
 
 
     //----------------------------PC VS PC--------------------------------
@@ -142,7 +217,7 @@ public class GameManager : MonoBehaviour
         highlights.Clear();
     }
 
-    
+
     private void OnBoardClicked(Position boardPos)
     {
         if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))
