@@ -54,8 +54,8 @@ public class GameManager : MonoBehaviour
         //------------------------------Important----------------------------
         //      gameMode                    |           Difficulty          |
         //      1 = Human Vs Human          |           1 = depth 1         |
-        //      2 = Human Vs PC             |           2 = depth 2         |
-        //      3 = PC Vs PC                |           3 = depth 3         |
+        //      2 = Human Vs PC             |           2 = depth 3         |
+        //      3 = PC Vs PC                |           3 = depth 5         |
         //-------------------------------------------------------------------
 
         gameMode = PlayerPrefs.GetInt("Mode");
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
 
         //Debug.Log(gameMode);
         //Debug.Log(difficulty);
-
+        
 
         AIBlack.SetDepth(AiBlackLevel);
         AIWhite.SetDepth(AiWhiteLevel);
@@ -217,7 +217,7 @@ public class GameManager : MonoBehaviour
         highlights.Clear();
     }
 
-
+    
     private void OnBoardClicked(Position boardPos)
     {
         if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))

@@ -15,12 +15,15 @@ public class AIPlayer
     {
         this.searchDepth = 1;
         this.gameStatePool = new ObjectPool<GameState>(() => new GameState());
-		
-		public void SetDepth(int depth)
-        {
-        this.searchDepth = depth;
-        }
     }
+
+    public void SetDepth(int depth)
+    {
+        this.searchDepth = depth;
+    }
+
+
+
     //-----------------------Get best move to play---------------------------------
 
     public Position GetBestMove(GameState gameState)
@@ -36,10 +39,13 @@ public class AIPlayer
 
         return bestMove;
     }
-	//---------------------------Test----------------------------
+
+
+    //---------------------------Test----------------------------
 
 
     //---------------------------------------------------------------------------
+
 
     //------------------------MiniMax Alpha-Beta Pruning---------------------------
 
@@ -115,6 +121,8 @@ public class AIPlayer
         return (bestScore, bestMove);
 
     }
+
+
     //---------------------All Heuristics Evaluation Function-----------------------
 
     private int CalculateHeuristics(GameState gameState)
@@ -125,6 +133,7 @@ public class AIPlayer
         int cornersHeuristic = CornersCapturedHeuristic(gameState);
 
         return (coinParityHeuristic + actualMobilityHeuristic + potentialMobilityHeuristic + cornersHeuristic);
+        //return (coinParityHeuristic + actualMobilityHeuristic + cornersHeuristic);
 
     }
 
@@ -163,6 +172,7 @@ public class AIPlayer
 
         return 0;
     }
+
     //------------------------------Actual Mobility----------------------------------
 
     private int ActualMobilityHeuristic(GameState gameState)
@@ -190,7 +200,8 @@ public class AIPlayer
         }
 
     }
-     //---------------------------------Potential Mobility-------------------------------
+
+    //---------------------------------Potential Mobility-------------------------------
 
     private int PotentialMobilityHeuristic(GameState gameState)
     {
@@ -216,10 +227,11 @@ public class AIPlayer
         {
             return 0;
         }
-        
 
     }
-	private int GetPotentialMobility(GameState gameState, Player player)
+
+
+    private int GetPotentialMobility(GameState gameState, Player player)
     {
         int potentialMobility = 0;
 
@@ -261,8 +273,8 @@ public class AIPlayer
         }
     }
 
-    
-    //----------------------------Corners Captured----------------------------------//
+
+    //----------------------------Corners Captured----------------------------------
 
     private int CornersCapturedHeuristic(GameState gameState)
     {
@@ -317,6 +329,5 @@ public class AIPlayer
 
         return cornersCaptured;
     }
-
 
 }

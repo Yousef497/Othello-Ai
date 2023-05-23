@@ -5,8 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class MenuController : MonoBehaviour
-{
+public class MenuController : MonoBehaviour {
 
     //------------Scenes acoording to chosen settings-------------
     public string Human_VS_Human;
@@ -23,8 +22,7 @@ public class MenuController : MonoBehaviour
     public int AiWhiteLevel = 0;
 
     // ---------------------------------------------------------------------
-    void Start()
-    {
+    void Start(){
         modeNotSelected.SetActive(false);
         Difficulty_Human_VS_PC.SetActive(false);
         Difficulty_PC_VS_PC.SetActive(false);
@@ -34,7 +32,7 @@ public class MenuController : MonoBehaviour
     {
         AiBlackLevel = AiBlackLevelList.value;
 
-        if (AiBlackLevel == 1)
+        if(AiBlackLevel == 1)
         {
             PlayerPrefs.SetInt("AiBlackLevel", AiBlackLevel);
         }
@@ -72,8 +70,7 @@ public class MenuController : MonoBehaviour
     //    PlayerPrefs.SetInt("Difficulty", difficulty);
     //}
 
-    public void onGameModeChoose(TMP_Dropdown gameModeList)
-    {
+    public void onGameModeChoose(TMP_Dropdown gameModeList){
         gameMode = gameModeList.value;
         PlayerPrefs.SetInt("Mode", gameMode);
     }
@@ -108,8 +105,7 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public void ExitButton()
-    {
+    public void ExitButton() {
         Application.Quit();
     }
 
