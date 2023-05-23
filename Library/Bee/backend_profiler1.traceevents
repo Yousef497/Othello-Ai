@@ -1,0 +1,450 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1684066059160594, "dur":738, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066059161341, "dur":59, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1684066059161421, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1684066059161439, "dur":272, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1684066059161758, "dur":914, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066059162672, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340471, "dur":18, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340489, "dur":50, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340539, "dur":185, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340725, "dur":32, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340757, "dur":12, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340769, "dur":25, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340794, "dur":8, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340802, "dur":27, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340829, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340879, "dur":5, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062340967, "dur":2898, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1684066059162399, "dur":285, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059162688, "dur":4787, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059167489, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1684066059167498, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059168127, "dur":213, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1684066059168346, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1684066059168370, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059168486, "dur":2661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1684066059171151, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1684066059171327, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059171393, "dur":6626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1684066059178091, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1684066059178234, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059178245, "dur":1591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1684066059179918, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1684066059180076, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059180361, "dur":1051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1684066059181493, "dur":24368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1684066059205868, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059205881, "dur":849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1684066059206799, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1684066059206965, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059207358, "dur":4322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1684066059211802, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1684066059211984, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059212018, "dur":1026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1684066059213131, "dur":16332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1684066059229469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059229480, "dur":1032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1684066059230599, "dur":145357, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059375963, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059375973, "dur":55302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059431355, "dur":41876, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059473240, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059473253, "dur":861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059474136, "dur":43069, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059517213, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059517225, "dur":1293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059518551, "dur":34636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059553199, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059553214, "dur":899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059554136, "dur":120460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059674603, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059674616, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059675541, "dur":34851, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059710399, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059710411, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059711339, "dur":63224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059774569, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059774582, "dur":1030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059775633, "dur":167645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059943285, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059943297, "dur":1001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059944327, "dur":38524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059982857, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066059982868, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066059983683, "dur":63904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060047594, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060047605, "dur":872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060048500, "dur":100789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060149296, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060149307, "dur":1116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060150448, "dur":46503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060196958, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060196970, "dur":843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060197834, "dur":33674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060231515, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060231527, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060232396, "dur":127379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060359782, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060359796, "dur":861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060360681, "dur":47660, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060408348, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060408361, "dur":910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060409297, "dur":41421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060450723, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060450734, "dur":858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060451611, "dur":273753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060725371, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066060725384, "dur":879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066060726283, "dur":431394, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061157717, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066061157729, "dur":29788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061187542, "dur":137624, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061325177, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066061325190, "dur":901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061326111, "dur":352603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061678721, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066061678734, "dur":2389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061681150, "dur":78013, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061759183, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066061759197, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066061760292, "dur":541896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066062302195, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684066062302206, "dur":37828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684066062340106, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":1, "ts":1684066062340117, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059162461, "dur":241, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059162703, "dur":4814, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059167518, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1684066059167885, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059168749, "dur":8734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1684066059177565, "dur":22979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1684066059200550, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059200564, "dur":820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1684066059201455, "dur":15504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1684066059216966, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059216981, "dur":1156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1684066059218239, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1684066059218508, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059218524, "dur":1715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1684066059220327, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1684066059220487, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059220499, "dur":1170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1684066059221754, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1684066059221944, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059221955, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1684066059224155, "dur":2991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059227153, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059227378, "dur":1283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059228743, "dur":72141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059300890, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059300953, "dur":5178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059306207, "dur":41258, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059347472, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059347523, "dur":932, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059348475, "dur":62831, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059411313, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059411325, "dur":1931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059413279, "dur":69216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059482502, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059482542, "dur":830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059483397, "dur":39043, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059522448, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059522460, "dur":850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059523335, "dur":116635, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059639977, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059639988, "dur":824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059640838, "dur":91164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059732012, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059732027, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059733030, "dur":74381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059807418, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059807430, "dur":874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059808325, "dur":88654, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059896987, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059896999, "dur":895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059897918, "dur":101495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066059999420, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066059999432, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060000338, "dur":41843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060042189, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060042201, "dur":910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060043136, "dur":67569, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060110713, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060110725, "dur":883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060111632, "dur":38857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060150497, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060150512, "dur":1155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060151704, "dur":63502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060215213, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060215224, "dur":2364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060217611, "dur":35232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060252850, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060252863, "dur":995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060253878, "dur":41162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060295047, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060295091, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060296016, "dur":40477, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060336501, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060336514, "dur":870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060337406, "dur":173636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060511049, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060511062, "dur":1908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060512991, "dur":50203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060563202, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060563217, "dur":1646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060564888, "dur":130885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060695779, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066060695791, "dur":1234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066060697048, "dur":426607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061123662, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066061123687, "dur":1301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061125009, "dur":153281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061278297, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066061278309, "dur":873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061279201, "dur":189365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061468574, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066061468587, "dur":940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061469549, "dur":76381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061545937, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066061545957, "dur":900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061546879, "dur":240195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061787082, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066061787096, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066061788725, "dur":428546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066062217279, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684066062217292, "dur":1239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684066062218570, "dur":121607, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059162442, "dur":252, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059162694, "dur":4787, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059167489, "dur":65256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1684066059232751, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059233081, "dur":776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1684066059233930, "dur":58152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai.exe" }}
+,{ "pid":12345, "tid":3, "ts":1684066059292088, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059292098, "dur":1182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai.exe" }}
+,{ "pid":12345, "tid":3, "ts":1684066059293303, "dur":40448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059333771, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059334936, "dur":1159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059336116, "dur":61467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059397590, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059397603, "dur":10028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059407653, "dur":44908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059452568, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059452580, "dur":1182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059453784, "dur":46573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059500365, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059500377, "dur":872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059501273, "dur":38079, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059539359, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059539371, "dur":893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059540284, "dur":34568, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059574860, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059574905, "dur":863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059575790, "dur":31468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059607265, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059607277, "dur":816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059608112, "dur":55076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059663194, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059663205, "dur":845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059664069, "dur":241413, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059905489, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059905502, "dur":1555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059907080, "dur":65266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059972353, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066059972365, "dur":820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066059973207, "dur":45184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060018397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060018409, "dur":786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060019287, "dur":35392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060054686, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060054698, "dur":865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060055582, "dur":77640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060133229, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060133243, "dur":1088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060134356, "dur":41755, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060176119, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060176131, "dur":916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060177070, "dur":38774, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060215851, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060215863, "dur":1043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060216930, "dur":37654, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060254590, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060254602, "dur":821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060255442, "dur":50943, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060306391, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060306403, "dur":1434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060307858, "dur":33277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060341143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060341155, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060342038, "dur":31598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060373640, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060373681, "dur":5017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060378720, "dur":71436, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060450163, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060450176, "dur":846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060451043, "dur":67397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060518477, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060518491, "dur":954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060519468, "dur":73256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060592732, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060592745, "dur":1951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060594720, "dur":110823, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060705550, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060705563, "dur":902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060706491, "dur":172104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060878602, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066060878614, "dur":956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066060879591, "dur":168505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061048103, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061048115, "dur":926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061049062, "dur":244503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061293572, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061293585, "dur":1406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061295015, "dur":52563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061347585, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061347597, "dur":971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061348591, "dur":327713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061676312, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061676325, "dur":2478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061678826, "dur":232786, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061911620, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061911635, "dur":1147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684066061912810, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1684066061912838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061912870, "dur":1203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1684066061914098, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061914126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061914136, "dur":4927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061919088, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061919193, "dur":34, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061919240, "dur":1067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061920330, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061920357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061920367, "dur":10121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061930514, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061930541, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061930553, "dur":1162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061931741, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1684066061931900, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061931911, "dur":855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1684066061932788, "dur":10820, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1684066061943616, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061943629, "dur":1056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1684066061944712, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061944740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061944751, "dur":1068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061945841, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061945866, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061945876, "dur":840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061946740, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level1.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061946767, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061946776, "dur":920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level1.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061947719, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level1" }}
+,{ "pid":12345, "tid":3, "ts":1684066061947746, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061947755, "dur":868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level1" }}
+,{ "pid":12345, "tid":3, "ts":1684066061948648, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061948673, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061948682, "dur":945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1684066061949651, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1684066061949678, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061949688, "dur":835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1684066061950548, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061950576, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061950585, "dur":1078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1684066061951686, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1684066061951713, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061951723, "dur":866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1684066061952613, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1684066061952768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684066061952778, "dur":880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1684066061953692, "dur":386656, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059162490, "dur":220, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059162710, "dur":4808, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059167519, "dur":26829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1684066059194354, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059194385, "dur":1392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1684066059195855, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1684066059196016, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059196080, "dur":5378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1684066059201548, "dur":1590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1684066059203145, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059203165, "dur":5371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1684066059208622, "dur":21198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1684066059229828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059229843, "dur":919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1684066059230843, "dur":13598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1684066059244448, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059244458, "dur":1530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1684066059246064, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1684066059246210, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059246423, "dur":15685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1684066059262198, "dur":101673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059363878, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059363890, "dur":1394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059365306, "dur":78069, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059443382, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059443394, "dur":904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059444319, "dur":216486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059660812, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059660824, "dur":942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059661788, "dur":224002, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059885797, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059885809, "dur":1875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059887706, "dur":38065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059925872, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059925885, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059926705, "dur":54637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059981350, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066059981362, "dur":839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066059982223, "dur":34451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060016682, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060016694, "dur":975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060017694, "dur":32031, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060049733, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060049745, "dur":874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060050643, "dur":39710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060090361, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060090373, "dur":1539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060091943, "dur":61087, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060153036, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060153049, "dur":849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060153919, "dur":183570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060337494, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060337504, "dur":854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060338378, "dur":35131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060373517, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060373529, "dur":845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060374397, "dur":78421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060452825, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060452837, "dur":865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060453722, "dur":76427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060530156, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060530168, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060531034, "dur":164068, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060695109, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060695121, "dur":1002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060696146, "dur":124809, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060820962, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060820974, "dur":898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060821891, "dur":100481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060922379, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066060922392, "dur":887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066060923299, "dur":314628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061237934, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066061237948, "dur":1046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061239013, "dur":58240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061297260, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066061297273, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061298807, "dur":339523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061638337, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066061638351, "dur":1237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061639610, "dur":240270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061879888, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066061879903, "dur":1129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066061881058, "dur":203405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066062084471, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684066062084486, "dur":1130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"F:/Senior 2/Projects/Othello Ai/EXEV2/Othello Ai_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684066062085645, "dur":254667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684066062349119, "dur":10215, "ph":"X", "name": "ProfilerWriteOutput" }
+,
