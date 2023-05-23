@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Text;
-using System.Security.Cryptography;
 
 
 // Game Rules class
@@ -65,7 +64,179 @@ public class GameState
         LegalMoves = FindLegalMoves(CurrentPlayer);
     }
 
+
+    // Constructor to create a deep copy of the GameState class
+    public GameState(GameState other)
+    {
+        Board = (Player[,])other.Board.Clone();
+        DiscCount = new Dictionary<Player, int>()
+        {
+            { Player.Black, other.DiscCount[Player.Black] },
+            { Player.White, other.DiscCount[Player.White] }
+        };
+        CurrentPlayer = other.CurrentPlayer;
+        GameOver = other.GameOver;
+        Winner = other.Winner;
+        LegalMoves = new Dictionary<Position, List<Position>>();
+
+        foreach (KeyValuePair<Position, List<Position>> entry in other.LegalMoves)
+        {
+            List<Position> outflanked = new List<Position>(entry.Value);
+            LegalMoves.Add(entry.Key, outflanked);
+        }
+    }
+
+    // --------------------------------------------------------------------------------
+
+    public void CopyFrom(GameState other)
+    {
+        Board = (Player[,])other.Board.Clone();
+
+        DiscCount = new Dictionary<Player, int>()
+        {
+            { Player.Black, other.DiscCount[Player.Black] },
+            { Player.White, other.DiscCount[Player.White] }
+        };
+
+        CurrentPlayer = other.CurrentPlayer;
+        GameOver = other.GameOver;
+        Winner = other.Winner;
+
+        LegalMoves = new Dictionary<Position, List<Position>>();
+        foreach (KeyValuePair<Position, List<Position>> entry in other.LegalMoves)
+        {
+            List<Position> outflanked = new List<Position>(entry.Value);
+            LegalMoves.Add(entry.Key, outflanked);
+        }
+    }
+
+
+    public GameState LookAhead(Position pos)
+    {
+        GameState newGameState = new GameState(this);
+        newGameState.MakeMove(pos, out MoveInfo moveInfo);
+        return newGameState;
+    }
+
+
+    public bool MakeMove(Position pos, out MoveInfo moveInfo)
+    {
+        moveInfo = null;
+
+        if (pos == null)
+        {
+            return false;
+        }
+
+        if (!LegalMoves.ContainsKey(pos))
+        {
+            //moveInfo = null;
+            return false;
+        }
+
+        Player movePlayer = CurrentPlayer;
+        List<Position> outflanked = LegalMoves[pos];
+
+        Board[pos.Row, pos.Col] = movePlayer;
+
+
+        // --------------------------------------------------
+        FlipDiscs(outflanked);
+        UpdateDiscCounts(movePlayer, outflanked.Count);
+        PassTurn();
+        // --------------------------------------------------
+
+        moveInfo = new MoveInfo
+        {
+            Player = movePlayer,
+            Position = pos,
+            Outflanked = outflanked
+        };
+
+        return true;
+
+    }
+
+    //--------------------------Helper Methods to use in Make Move Function-----------------------
     
+    public IEnumerable<Position> OccupiedPositions()
+    {
+        for (int r = 0; r < Rows; r++)
+        {
+            for (int c = 0; c < Cols; c++)
+            {
+                if (Board[r, c] != Player.None)
+                {
+                    yield return new Position(r, c);
+                }
+            }
+        }
+    }
+
+    
+    private void UpdateDiscCounts(Player movePlayer, int outflankedCount)
+    {
+        DiscCount[movePlayer] += outflankedCount + 1;
+        DiscCount[movePlayer.Opponent()] -= outflankedCount;
+    }
+
+
+    private void FlipDiscs(List<Position> positions)
+    {
+        foreach (Position pos in positions)
+        {
+            Board[pos.Row, pos.Col] = Board[pos.Row, pos.Col].Opponent();
+        }
+    }
+
+
+    private void ChangePlayer()
+    {
+        CurrentPlayer = CurrentPlayer.Opponent();
+        LegalMoves = FindLegalMoves(CurrentPlayer);
+    }
+
+
+    private Player FindWinner()
+    {
+        if (DiscCount[Player.Black] > DiscCount[Player.White])
+        {
+            return Player.Black;
+        }
+
+        if (DiscCount[Player.White] > DiscCount[Player.Black])
+        {
+            return Player.White;
+        }
+
+        return Player.None;
+    }
+
+
+    private void PassTurn()
+    {
+        ChangePlayer();
+
+        if (LegalMoves.Count > 0)
+        {
+            return;
+        }
+
+        ChangePlayer();
+
+        if (LegalMoves.Count == 0)
+        {
+            CurrentPlayer = Player.None;
+            GameOver = true;
+            Winner = FindWinner();
+        }
+    }
+
+
+    //--------------------------------------------------------------------------------------
+
+
+
     //---------------------------------------------------------------------
     // to get legal moves to position the disc
     // the position should be:
@@ -159,5 +330,11 @@ public class GameState
         //Debug.Log(legalMoves.Count);
         return legalMoves;
     }
+
+
+
+
+    //--------------------------------------------------------------------------------
+    
 
 }
