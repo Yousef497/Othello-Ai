@@ -14,11 +14,11 @@ The game's objective is to have more pieces of your color on the board than your
 7. Players must make a move if they have a legal move available to them. If a player cannot make a legal move, their turn is forfeited.
  
 ## Supported Features:
-> Different Game Modes (Human VS Human, Human VS PC, PC VS PC).
-> 3 Difficulty levels (Easy: search depth 1, Medium: search depth 3, Hard: search depth 5).
-> Press ESC button to return to the Main Menu or click the Main Menu button.
-> The ability to Restart the game with the same options during the game without returning to the Main Menu.
-> The ability to return to the Main Menu during the game.
+•	Different Game Modes (Human VS Human, Human VS PC, PC VS PC).
+•	3 Difficulty levels (Easy: search depth 1, Medium: search depth 3, Hard: search depth 5).
+•	Press ESC button to return to the Main Menu or click the Main Menu button.
+•	The ability to Restart the game with the same options during the game without returning to the Main Menu.
+•	The ability to return to the Main Menu during the game.
 
 ## User ManuaL:
 1.	Download zip file that contains exe of the game.
