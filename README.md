@@ -20,8 +20,11 @@ The game's objective is to have more pieces of your color on the board than your
 4. The ability to Restart the game with the same options during the game without returning to the Main Menu.
 5. The ability to return to the Main Menu during the game.
 
-## User ManuaL:
-1.	Download zip file that contains exe of the game.
+## How to Play:
+https://www.youtube.com/watch?v=zFrlu3E18BA
+
+## User Manual:
+1.	Download zip file that contains exe of the game from here (https://drive.google.com/file/d/1jU4jgolBzGXU0l20_JMcn5KgfifJrobI/view).
 2.	Run the exe.
 3.	You need to choose a game mode before you start the game, or a pop-up message will appear (please choose a game mode to start).
 
